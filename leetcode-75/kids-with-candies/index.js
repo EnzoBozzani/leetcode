@@ -1,19 +1,8 @@
 function kidsWithCandies(candies, extraCandies) {
-    let highest = 0;
-    candies.forEach((candiesNumber) => {
-        if (candiesNumber > highest) {
-            highest = candiesNumber;
-        }
-    });
-    console.log(highest);
+    const highest = Math.max(...candies);
     const result = [];
     candies.forEach((candiesNumber, index) => {
-        if (candiesNumber + extraCandies >= highest) {
-            result[index] = true;
-        }
-        else {
-            result[index] = false;
-        }
+        result[index] = candiesNumber + extraCandies >= highest;
     });
     return result;
 }
