@@ -6,16 +6,6 @@ function reverseWords(s) {
             strArr.push(words[i]);
         }
     }
-    console.table(strArr);
-    while (strArr.includes('')) {
-        let i;
-        for (i = 0; i < strArr.length; i++) {
-            if (strArr[i] === '') {
-                break;
-            }
-        }
-        strArr.splice(i, 1);
-    }
     return strArr.join(' ');
 }
 ;

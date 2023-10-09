@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1", 
-    "run": "npx tsc && node index"
+    "exe": "npx tsc && node index"
   },
   "keywords": [],
   "author": "",
