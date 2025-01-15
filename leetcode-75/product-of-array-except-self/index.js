@@ -13,4 +13,3 @@ function productExceptSelf(nums) {
     return products;
 }
 ;
-console.log(productExceptSelf([1, 2, 3, 4, 0]));
